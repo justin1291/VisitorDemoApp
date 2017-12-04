@@ -1,0 +1,11 @@
+/Users/justingooley/Projects/ExampleAppBackEnd/ExampleAppBackEnd/bin/Debug/netcoreapp2.0/ExampleAppBackEnd.deps.json
+/Users/justingooley/Projects/ExampleAppBackEnd/ExampleAppBackEnd/bin/Debug/netcoreapp2.0/ExampleAppBackEnd.runtimeconfig.json
+/Users/justingooley/Projects/ExampleAppBackEnd/ExampleAppBackEnd/bin/Debug/netcoreapp2.0/ExampleAppBackEnd.runtimeconfig.dev.json
+/Users/justingooley/Projects/ExampleAppBackEnd/ExampleAppBackEnd/bin/Debug/netcoreapp2.0/ExampleAppBackEnd.dll
+/Users/justingooley/Projects/ExampleAppBackEnd/ExampleAppBackEnd/bin/Debug/netcoreapp2.0/ExampleAppBackEnd.pdb
+/Users/justingooley/Projects/ExampleAppBackEnd/ExampleAppBackEnd/obj/Debug/netcoreapp2.0/ExampleAppBackEnd.csprojResolveAssemblyReference.cache
+/Users/justingooley/Projects/ExampleAppBackEnd/ExampleAppBackEnd/obj/Debug/netcoreapp2.0/ExampleAppBackEnd.csproj.CoreCompileInputs.cache
+/Users/justingooley/Projects/ExampleAppBackEnd/ExampleAppBackEnd/obj/Debug/netcoreapp2.0/ExampleAppBackEnd.AssemblyInfoInputs.cache
+/Users/justingooley/Projects/ExampleAppBackEnd/ExampleAppBackEnd/obj/Debug/netcoreapp2.0/ExampleAppBackEnd.AssemblyInfo.cs
+/Users/justingooley/Projects/ExampleAppBackEnd/ExampleAppBackEnd/obj/Debug/netcoreapp2.0/ExampleAppBackEnd.dll
+/Users/justingooley/Projects/ExampleAppBackEnd/ExampleAppBackEnd/obj/Debug/netcoreapp2.0/ExampleAppBackEnd.pdb

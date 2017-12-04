@@ -1,0 +1,11 @@
+/Users/justingooley/Projects/VisitorDemoApp/VisitorBackEnd/bin/Debug/netcoreapp2.0/VisitorBackEnd.deps.json
+/Users/justingooley/Projects/VisitorDemoApp/VisitorBackEnd/bin/Debug/netcoreapp2.0/VisitorBackEnd.runtimeconfig.json
+/Users/justingooley/Projects/VisitorDemoApp/VisitorBackEnd/bin/Debug/netcoreapp2.0/VisitorBackEnd.runtimeconfig.dev.json
+/Users/justingooley/Projects/VisitorDemoApp/VisitorBackEnd/bin/Debug/netcoreapp2.0/VisitorBackEnd.dll
+/Users/justingooley/Projects/VisitorDemoApp/VisitorBackEnd/bin/Debug/netcoreapp2.0/VisitorBackEnd.pdb
+/Users/justingooley/Projects/VisitorDemoApp/VisitorBackEnd/obj/Debug/netcoreapp2.0/VisitorBackEnd.csprojResolveAssemblyReference.cache
+/Users/justingooley/Projects/VisitorDemoApp/VisitorBackEnd/obj/Debug/netcoreapp2.0/VisitorBackEnd.csproj.CoreCompileInputs.cache
+/Users/justingooley/Projects/VisitorDemoApp/VisitorBackEnd/obj/Debug/netcoreapp2.0/VisitorBackEnd.AssemblyInfoInputs.cache
+/Users/justingooley/Projects/VisitorDemoApp/VisitorBackEnd/obj/Debug/netcoreapp2.0/VisitorBackEnd.AssemblyInfo.cs
+/Users/justingooley/Projects/VisitorDemoApp/VisitorBackEnd/obj/Debug/netcoreapp2.0/VisitorBackEnd.dll
+/Users/justingooley/Projects/VisitorDemoApp/VisitorBackEnd/obj/Debug/netcoreapp2.0/VisitorBackEnd.pdb
