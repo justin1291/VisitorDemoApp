@@ -1,7 +1,8 @@
 .nav-bg {
-    background-color: #0747A6
+    background-color: #0747A6;
 }
 
 a {
-    color: #f6f6f6
+    color: #f6f6f6;
+    font-size: 1.6rem;
 }
