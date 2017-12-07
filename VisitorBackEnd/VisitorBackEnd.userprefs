@@ -1,3 +1,19 @@
 ﻿<Properties StartupConfiguration="{69116721-B800-4E18-B712-8D7A60A88545}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/VisitorController.cs">
+    <Files>
+      <File FileName="Startup.cs" Line="14" Column="25" />
+      <File FileName="appsettings.json" Line="3" Column="38" />
+      <File FileName="Models/Visitor.cs" Line="20" Column="1" />
+      <File FileName="Data/VisitorContext.cs" Line="20" Column="1" />
+      <File FileName="Program.cs" Line="44" Column="1" />
+      <File FileName="Controllers/VisitorController.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.VisitorBackEnd PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>

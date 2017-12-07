@@ -3,17 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using VisitorBackEnd.Models;
+using VisitorBackEnd.Data;
 
 namespace VisitorBackEnd.Controllers
 {
-    [Route("/[controller]")]
-    public class UserController : Controller
+    [Route("api/[controller]")]
+    public class VisitorController : Controller
     {
-        // GET api/values
+        private readonly VisitorContext _context;
+        public VisitorController(VisitorContext context) {
+            _context = context;
+        }
+
+        // GET api/visitor
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Visitor> Get()
         {
-            return new string[] { "You got the user controller" };
+          return _context.Visitors.ToList();
         }
 
         // GET api/values/5
