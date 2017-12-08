@@ -13,8 +13,7 @@ namespace VisitorBackEnd.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Visitor>().ToTable("Visitor")
-                        .Ignore(p => p.IpAddress);
+            modelBuilder.Entity<Visitor>().ToTable("Visitor");
         }
     }
 }

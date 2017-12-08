@@ -22,30 +22,19 @@ namespace VisitorBackEnd.Controllers
         {
           return _context.Visitors.ToList();
         }
-
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
+      
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]string value)
+        public IActionResult Post([FromBody] Visitor visitor)
         {
-        }
+            if (visitor == null){
+                return BadRequest();
+            }
+            _context.Visitors.Add(visitor);
+            _context.SaveChanges();
 
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            return Ok();
         }
     }
 }

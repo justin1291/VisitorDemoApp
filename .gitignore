@@ -1,1 +1,4 @@
 VisitorBackEnd/appsettings.json
+SQL/Select.sql
+.gitignore
+VisitorBackEnd/obj/Release/netcoreapp2.0/PubTmp/Out/appsettings.json

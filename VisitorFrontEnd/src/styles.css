@@ -1,6 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.css";
+@import '~@swimlane/ngx-datatable/release/index.css';
+@import '~@swimlane/ngx-datatable/release/themes/material.css';
+@import '~@swimlane/ngx-datatable/release/assets/icons.css';
+
+@media (max-height: 700px) {
+  .ngx-datatable {
+    height: 350px;
+  }
+}
+@media (min-height: 940px) {
+  .ngx-datatable {
+    height: 550px;
+  }
+}
+@media (min-height: 1040px) {
+  .ngx-datatable {
+    height: 650px;
+  }
+}
 
 body {
     background: #fafafa;

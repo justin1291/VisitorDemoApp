@@ -10,6 +10,8 @@ import { HeatMapComponent } from './heat-map/heat-map.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { DisclaimerComponent } from './disclaimer/disclaimer.component';
+import { DataComponent } from './data/data.component';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 
 @NgModule({
@@ -18,12 +20,14 @@ import { DisclaimerComponent } from './disclaimer/disclaimer.component';
     HeatMapComponent,
     HomeComponent,
     NotFoundComponent,
-    DisclaimerComponent
+    DisclaimerComponent,
+    DataComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     NgbModule.forRoot(),
+    NgxDatatableModule,
     RoutingModule
   ],
   entryComponents: [DisclaimerComponent],

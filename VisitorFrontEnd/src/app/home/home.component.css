@@ -2,6 +2,10 @@
     background-color: #0747A6;
 }
 
+ .btm-top-pd-1rem {
+     padding: 1rem 0;
+ }
+
 a {
     color: #f6f6f6;
     font-size: 1.6rem;

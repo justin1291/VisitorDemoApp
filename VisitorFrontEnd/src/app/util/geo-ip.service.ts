@@ -1,20 +1,27 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import {BehaviorSubject} from 'rxjs/BehaviorSubject';
-
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { GeoIpInfo } from './GeoIpInfo';
+import { ExtAPIGeoIp } from './extAPIGeoIp';
 
 @Injectable()
 export class GeoIpService {
 
-  private currentUserGeoIPObj:  BehaviorSubject<any> = new BehaviorSubject({});
+  private currentUserGeoIPObj: GeoIpInfo;
 
   constructor(private http: HttpClient) { }
 
   public geoIpInfo() {
-    return this.http.get<any>('http://freegeoip.net/json/');
+    return this.http.get<ExtAPIGeoIp>('http://freegeoip.net/json/');
   }
 
-  public set userIPInfo(geoIpObj: any){
+  public postGeoIpInfo(currentIpInfo: GeoIpInfo) {
+    let headers = new HttpHeaders();
+    headers = headers.set('Content-Type', 'application/json; charset=utf-8');
+    return this.http.post<GeoIpInfo>('./api/visitor', currentIpInfo, {headers: headers});
+  }
+
+  public setUserIPInfo(geoIpObj: GeoIpInfo) {
     this.currentUserGeoIPObj = geoIpObj;
   }
+
 }

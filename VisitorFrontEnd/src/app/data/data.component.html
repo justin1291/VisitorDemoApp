@@ -1,0 +1,20 @@
+<div class="col-md-12">
+  <ngx-datatable
+  class="material"
+  [rows]="rows"
+  [columns]="columns"
+  [columnMode]="'force'"
+  [loadingIndicator]="loadingIndicator"
+  [footerHeight]="40"
+  [rowHeight]="40"
+  [headerHeight]="80"
+  [scrollbarH]="true"
+  [scrollbarV]="true">
+</ngx-datatable>
+</div>
+
+<!-- <ng-template #headerFilter let-column="column" ngx-datatable-header-template>
+  <div>
+      <label>{{column.name}}</label>
+    <input required class="form-control" (keyup)="this.filterColumn(column.prop, $event.target.value, filterTracker, tableFilter, rows, rowCache)" >
+  </div> -->
