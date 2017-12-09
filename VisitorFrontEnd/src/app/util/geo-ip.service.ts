@@ -2,11 +2,12 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { GeoIpInfo } from './GeoIpInfo';
 import { ExtAPIGeoIp } from './extAPIGeoIp';
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
 @Injectable()
 export class GeoIpService {
 
-  private currentUserGeoIPObj: GeoIpInfo;
+  public currentUserGeoIPObj: BehaviorSubject<GeoIpInfo> = new BehaviorSubject(new GeoIpInfo());
 
   constructor(private http: HttpClient) { }
 
@@ -21,7 +22,8 @@ export class GeoIpService {
   }
 
   public setUserIPInfo(geoIpObj: GeoIpInfo) {
-    this.currentUserGeoIPObj = geoIpObj;
+    this.currentUserGeoIPObj.next(geoIpObj);
   }
+
 
 }
