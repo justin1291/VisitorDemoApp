@@ -1,0 +1,8 @@
+.navbar {
+    background-color: #006BA6; 
+}
+
+.navbar > .navbar-brand {
+    margin-left: 2rem;
+    color: #f6f6f6;
+}

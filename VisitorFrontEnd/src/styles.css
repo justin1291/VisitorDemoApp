@@ -21,18 +21,13 @@
   }
 }
 
-body {
-    background: #fafafa;
-    color: #212121;
-    font-size: 1.2rem;
-}
 
 
 body {
     text-align: left;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.0rem;
+    font-size: 1.2rem;
     line-height: 2rem;
     letter-spacing: 0.02rem;
     color: #212121;

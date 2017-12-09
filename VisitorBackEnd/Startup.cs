@@ -27,15 +27,15 @@ namespace VisitorBackEnd
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<VisitorContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SQLAZURECONNSTR_VisitorAppConn")));
-            services.AddMvc();
+            services.AddMvc();    
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-                app.UseDefaultFiles();
-                app.UseStaticFiles();
-                app.UseDeveloperExceptionPage();
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+            app.UseDeveloperExceptionPage();
 
             app.UseMvc();
         }

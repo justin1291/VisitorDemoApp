@@ -3,3 +3,4 @@ SQL/Select.sql
 .gitignore
 VisitorBackEnd/obj/Release/netcoreapp2.0/PubTmp/Out/appsettings.json
 SQL/INSERT_TEST_VISITOR.sql
+

@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild, TemplateRef } from '@angular/core';
 import { VisitorService } from './visitor.service';
 import { GeoIpInfo } from '../util/geoIpInfo';
+import { GeoIpService } from '../util/geo-ip.service';
 
 @Component({
   selector: 'app-data',
@@ -15,10 +16,11 @@ export class DataComponent implements OnInit {
   columns = [];
   SEVEN_SECONDS_MS = 7000;
 
-  constructor(private visitorService: VisitorService) {
-    setInterval(() => { this.getAllVisitors(); }, this.SEVEN_SECONDS_MS);
-    // For demo purposes we won't stop the live feed. Though in a large scale db,
-    // we would want to come up with more creative solutions.
+  constructor(private visitorService: VisitorService, private geoIpService: GeoIpService) {
+    this.geoIpService.currentUserGeoIPObj.subscribe( newVisitor => {
+      // call at instantiation, and all detected changes
+        this.getAllVisitors();
+    });
   }
 
   private getAllVisitors() {
@@ -37,8 +39,6 @@ export class DataComponent implements OnInit {
       {  name : 'Insert Date', prop: 'insertDate', width: 150},
       {  name : 'Update Date', prop: 'updateDate', width: 150},
       {  name : 'Visit Count', prop: 'updateCount', width: 150});
-
-      this.getAllVisitors();
   }
 
 }
