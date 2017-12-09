@@ -5,19 +5,19 @@
 @import '~@swimlane/ngx-datatable/release/themes/material.css';
 @import '~@swimlane/ngx-datatable/release/assets/icons.css';
 
-@media (max-height: 700px) {
+
   .ngx-datatable {
-    height: 350px;
+    height: 400px;
   }
-}
-@media (min-height: 940px) {
+
+@media (min-height: 701px) {
   .ngx-datatable {
     height: 550px;
   }
 }
-@media (min-height: 1040px) {
+@media (min-height: 901px) {
   .ngx-datatable {
-    height: 650px;
+    height: 750px;
   }
 }
 
