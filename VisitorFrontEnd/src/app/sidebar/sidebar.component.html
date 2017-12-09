@@ -1,0 +1,17 @@
+<ng-sidebar-container class="container-fluid sidebar-dim" [(showBackdrop)]="_showBackdrop">
+  <ng-sidebar closeOnClickBackdrop="true"  sidebarClass="sidebar" [showBackdrop]="_showBackdrop" [(opened)]="_opened" mode='push' (mouseleave)="_toggleSidebar()">
+    <ul class="sidebar-nav">
+      <li closeSidebar *ngFor="let item of items; let i = index; trackBy: index" class="nav-item">
+        <a class="nav-link" href="{{items[i].url}}">
+          {{items[i].title}}
+          <i [ngClass]="items[i].class" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="sidebar-brand">Justin Gooley {{year}}</li>
+    </ul>
+  </ng-sidebar>
+  <div ng-sidebar-content>
+    <app-nav-bar></app-nav-bar>
+    <router-outlet></router-outlet>
+  </div>
+</ng-sidebar-container>
