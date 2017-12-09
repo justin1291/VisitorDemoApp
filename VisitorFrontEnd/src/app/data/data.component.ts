@@ -35,7 +35,8 @@ export class DataComponent implements OnInit {
       {  name : 'Latitude', prop: 'latitude', width: 150},
       {  name : 'Longitude', prop: 'longitude', width: 150},
       {  name : 'Insert Date', prop: 'insertDate', width: 150},
-      {  name : 'Update Date', prop: 'updateDate', width: 150});
+      {  name : 'Update Date', prop: 'updateDate', width: 150},
+      {  name : 'Visit Count', prop: 'updateCount', width: 150});
 
       this.getAllVisitors();
   }

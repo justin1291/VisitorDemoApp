@@ -21,5 +21,8 @@ namespace VisitorBackEnd.Models
         public DateTime InsertDate { get; set; }
         [Column("UPDATE_DATE")]
         public DateTime? UpdateDate { get; set; }
+        [Column("UPDATE_COUNT", TypeName = "int")]
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
+        public int? UpdateCount { get; set; }
     }
 }

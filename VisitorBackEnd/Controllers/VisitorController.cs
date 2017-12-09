@@ -20,8 +20,9 @@ namespace VisitorBackEnd.Controllers
         [HttpGet]
         public IEnumerable<Visitor> Get()
         {
-            return _context.Visitors.OrderBy(field => field.InsertDate)
-                         .ToList();
+            return _context.Visitors
+                           .OrderBy(field => field.InsertDate)
+                           .ToList();
         }
       
 
